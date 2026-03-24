@@ -69,7 +69,7 @@ def process_header(kanji_head, reading_head, forms_list):
 
     # Non-greedy wildcard inside parens catches anything (including spaces/symbols)
     # Standalone symbols handled at the end
-    regex_pattern = r"（.*?）|\(.*?\)|[㊒㊚∅★⛬▼⚠]"
+    regex_pattern = r"（.*?）|\(.*?\)|[㊒㊚∅★⛬▼⚠🅁]"
 
     clean_k_head = re.sub(regex_pattern, "", kanji_head).strip()
     
